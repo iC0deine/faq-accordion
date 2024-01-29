@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(https://fonts.google.com/specimen/Work+Sans);
+    font-weight: 400, 600, 700;
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+main .answer {
+    display: none;
+}
+
+.container > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+
