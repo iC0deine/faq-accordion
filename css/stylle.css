@@ -1,13 +1,9 @@
+@import url(./fonts.css);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "Work Sans";
-    src: url(https://fonts.google.com/specimen/Work+Sans);
-    font-weight: 400, 600, 700;
 }
 
 body {
@@ -29,19 +25,45 @@ main {
 
 main .container {
     background-color: hsl(0, 0%, 100%);
-    width: 600px;
+    width: 650px;
     height: 500px;
     border-radius: 15px;
+    box-shadow: 1px 8px 12px 13px rgba(47,21,51,0.16);
+    -webkit-box-shadow: 1px 8px 12px 13px rgba(47,21,51,0.16);
+    -moz-box-shadow: 1px 8px 12px 13px rgba(47,21,51,0.16);
+}
+
+.container > div {
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+main .faqs {
+    font-family: worksansbold;
+    font-size: 30px;
+    gap: 20px;
+}
+
+main .question {
+    font-family: worksanssemibold;
+    font-size: 14px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+main .question h2:hover {
+    color: #AD28EB;
 }
 
 main .answer {
     display: none;
 }
 
-.container > div {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+main .answer.expand {
+    display: block;
+    font-family: worksansregular;
+    margin-top: 15px;
 }
 
 
